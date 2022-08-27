@@ -22,13 +22,59 @@ body {
 білий текст  #FFFFFF
 
 */
+/* reset */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
 
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section {
+  padding-top: 94px;
+  margin-bottom: 94px;
+}
+.nav-list {
+  display: flex;
+}
+.header {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #ececec;
+}
+.header-list {
+  margin-left: auto;
+  display: flex;
+}
+.header .container {
+  display: flex;
+  align-items: center;
+}
 .nav-link {
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
+}
+.nav-item:not(:last-child) {
+  margin-right: 50px;
 }
 .logo {
   text-decoration: none;
@@ -39,6 +85,7 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+  margin-right: 93px;
 }
 .current {
   color: var(--accent-color);
@@ -55,6 +102,9 @@ body {
   text-decoration: none;
 }
 .header-link {
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -73,6 +123,9 @@ body {
 .header-item {
   list-style: none;
 }
+.header-item:not(:last-child) {
+  margin-right: 50px;
+}
 
 .hero {
   background-color: var(--background-color);
@@ -87,7 +140,7 @@ body {
   color: var(--light-text-color);
 }
 
-.btn {
+.hero-btn {
   color: var(--light-text-color);
   background-color: var(--accent-color);
   font-weight: 700;
@@ -100,9 +153,19 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.feature-item {
+  width: 270px;
 }
 .feature-list {
   list-style: none;
+  display: flex;
+}
+.feature-item:not(:last-child) {
+  margin-right: 30px;
 }
 .visually-hidden {
   position: absolute;
@@ -123,6 +186,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-text-color);
+  margin-bottom: 10px;
 }
 .feature-text {
   font-size: 14px;
@@ -136,6 +200,13 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+  margin-bottom: 50px;
+}
+.box-list {
+  display: flex;
+}
+.box-item:not(:last-child) {
+  margin-right: 30px;
 }
 .team {
   background-color: var(--background-gray);
@@ -148,6 +219,28 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+  margin-bottom: 50px;
+}
+.team-list {
+  display: flex;
+}
+.team-item {
+  width: 270px;
+  height: 368px;
+  left: 215px;
+  top: 1632px;
+
+  background: var(--light-text-color);
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.team-item:not(:last-child) {
+  margin-right: 30px;
+}
+.team-img {
+  margin-bottom: 30px;
 }
 .team-name {
   font-weight: 500;
@@ -156,6 +249,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+  margin-bottom: 10px;
 }
 .team-text {
   font-size: 16px;
@@ -166,6 +260,11 @@ body {
 
 .footer {
   background-color: var(--background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-list {
+  padding: 0;
 }
 .footer-logo {
   font-family: 'Raleway';
@@ -176,6 +275,10 @@ body {
   letter-spacing: 0.03em;
 
   color: var(--light-text-color);
+  margin-bottom: 10px;
+}
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .footer-link:hover,
@@ -188,6 +291,7 @@ body {
 }
 .address {
   font-style: normal;
+  width: 231px;
 }
 .footer-address {
   font-size: 14px;
@@ -204,6 +308,17 @@ body {
 }
 /* Портфоліо */
 
+.filter-list {
+  display: flex;
+  width: 575px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 50px;
+}
+
+.filter-item:not(:last-child) {
+  margin-right: 10px;
+}
 .filter-btn {
   cursor: pointer;
   font-weight: 500;
@@ -213,6 +328,14 @@ body {
   letter-spacing: 0.03em;
   color: var(--title-text-color);
   background-color: var(--background-gray);
+  border-radius: 4px;
+  border: 0;
+  min-width: 73px;
+  max-height: 38px;
+  padding-top: 6px;
+  padding-right: 22px;
+  padding-bottom: 6px;
+  padding-left: 22px;
 }
 
 .filter-btn:hover,
@@ -231,4 +354,18 @@ body {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
+}
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.project-item {
+  flex-basis: calc((100% - 30px * 2) / 3);
+}
+.project-img {
+  margin-bottom: 20px;
+}
+.project-name {
+  margin-bottom: 4px;
 }
