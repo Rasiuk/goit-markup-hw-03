@@ -44,7 +44,7 @@ ul {
 }
 .section {
   padding-top: 94px;
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 .nav-list {
   display: flex;
@@ -129,7 +129,10 @@ ul {
 
 .hero {
   background-color: var(--background-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -138,6 +141,10 @@ ul {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--light-text-color);
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
 }
 
 .hero-btn {
@@ -202,11 +209,19 @@ ul {
   color: var(--title-text-color);
   margin-bottom: 50px;
 }
+.box section {
+  padding-top: 0;
+}
 .box-list {
   display: flex;
 }
 .box-item:not(:last-child) {
   margin-right: 30px;
+}
+.img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 .team {
   background-color: var(--background-gray);
@@ -225,11 +240,6 @@ ul {
   display: flex;
 }
 .team-item {
-  width: 270px;
-  height: 368px;
-  left: 215px;
-  top: 1632px;
-
   background: var(--light-text-color);
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -240,8 +250,8 @@ ul {
   margin-right: 30px;
 }
 .team-img {
-  margin-bottom: 30px;
 }
+
 .team-name {
   font-weight: 500;
   font-size: 16px;
@@ -257,6 +267,10 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
 }
+.team-info {
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
 
 .footer {
   background-color: var(--background-color);
@@ -267,6 +281,8 @@ ul {
   padding: 0;
 }
 .footer-logo {
+  text-decoration: none;
+
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
@@ -275,7 +291,7 @@ ul {
   letter-spacing: 0.03em;
 
   color: var(--light-text-color);
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .footer-item:not(:last-child) {
   margin-bottom: 9px;
@@ -291,7 +307,6 @@ ul {
 }
 .address {
   font-style: normal;
-  width: 231px;
 }
 .footer-address {
   font-size: 14px;
@@ -310,9 +325,7 @@ ul {
 
 .filter-list {
   display: flex;
-  width: 575px;
-  margin-right: auto;
-  margin-left: auto;
+  justify-content: center;
   margin-bottom: 50px;
 }
 
@@ -364,7 +377,7 @@ ul {
   flex-basis: calc((100% - 30px * 2) / 3);
 }
 .project-img {
- display: block;
+  display: block;
 }
 .project-border {
   padding: 20px 24px;
