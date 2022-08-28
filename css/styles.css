@@ -364,7 +364,13 @@ ul {
   flex-basis: calc((100% - 30px * 2) / 3);
 }
 .project-img {
-  margin-bottom: 20px;
+  margin-bottom: 0;
+}
+.project-border {
+  padding: 20px 24px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  border-top: none;
 }
 .project-name {
   margin-bottom: 4px;
