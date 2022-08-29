@@ -209,7 +209,7 @@ ul {
   color: var(--title-text-color);
   margin-bottom: 50px;
 }
-.box section {
+.box-section {
   padding-top: 0;
 }
 .box-list {
@@ -281,6 +281,7 @@ ul {
   padding: 0;
 }
 .footer-logo {
+  display: inline-block;
   text-decoration: none;
 
   font-family: 'Raleway';
